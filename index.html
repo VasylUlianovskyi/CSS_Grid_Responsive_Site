@@ -5,45 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>myTunes</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header class="main-header">
-      <nav>
-        <ul>
-          <li class="nav-list-item">
-            <a class="nav-link" href="">myTunes</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-link" href="">Overview</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-link" href="">Music</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-link" href="">Video</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-link" href="">Gift Cards</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="first-section">
-        <div class="center-wrapper">
-          <h1>myTunes</h1>
-          <section>
-            <h2>Your music, movies, and TV shows take center stage.</h2>
-            <p>
-              myTunes is the best way to organize and enjoy the music, movies,
-              and TV shows you already have — and shop for the ones you want.
-              Enjoy all the entertainment myTunes has to offer on your Mac and
-              PC.
-            </p>
-          </section>
-        </div>
+    <article class="user-card">
+      <div class="blue-bg"></div>
+      <div class="user-photo-wrapper">
+        <img class="user-photo" src="./assets/images/img.jpg" alt="cat" />
       </div>
-    </main>
+      <div class="content-wrapper">
+        <h2>CoddingLab</h2>
+        <p>YouTuber&Blogger</p>
+        <div class="links-container">
+          <a class="fb-link social-link" href="#"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a class="tw-link social-link" href="#"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a class="inst-link social-link" href="#"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a class="youtube-link social-link" href="#"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+        <div class="btn-container">
+          <button class="subscribe-btn">Subscribe</button>
+          <button class="msg-btn">Message</button>
+        </div>
+        <ul class="socian-list">
+          <li class="icons"><i class="fa-regular fa-heart"></i> 60.4k</li>
+          <li class="icons"><i class="fa-regular fa-comment"></i> 20k</li>
+          <li class="icons"><i class="fa-solid fa-share"></i> 12.4k</li>
+        </ul>
+      </div>
+    </article>
   </body>
 </html>
