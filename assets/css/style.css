@@ -3,67 +3,61 @@
 }
 
 
-body {
-  padding: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+
+table {
+  padding: 20px;
+  border-collapse: collapse;
+}
+
+tbody,
+th {
+  text-align: left;
 }
 
 
-.user-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-grow: 1;
-  gap: 10px;
-  max-width: 320px;
-  min-width: 280px;
-  flex-basis: 300px;
-  padding: 15px;
-  border: 2px solid white;
-  border-radius: 5px;
-  box-shadow: 0 0 10px #d37c3b;
+th,
+td {
+  padding: 10px;
+}
+
+td {
   text-align: center;
 }
 
-.edit-button {
-  align-self: flex-end;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  color: #d37c3b;
-
+thead th:nth-child(1) {
+  background-color: #7787a9;
+  color: white;
 }
 
-.user-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
+thead th:nth-child(2) {
+  background-color: #4d628f;
+  color: white;
 }
 
-.membership-section {
-  display: flex;
-  justify-content: space-between;
-  align-self: stretch;
-  margin-top: auto;
+thead th:nth-child(3) {
+  background-color: #2a4271;
+  color: white;
 }
 
-.social-links-list {
-  display: flex;
-  gap: 15px
+thead th:nth-child(4) {
+  background-color: #152857;
+  color: white;
 }
 
 
-.socian-lnk {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: inherit;
-  text-decoration: none;
-  width: 30px;
-  height: 30px;
-  border: 1px solid grey;
-  border-radius: 50%;
+tbody tr:nth-child(2n + 1) {
+  background-color: #dbdbdb;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: #cebdbd;
+}
+
+tr td:nth-child(2n) {
+  background-color: #f3f3f330;
+}
+
+
+button {
+  padding: 6px 20px;
 }
