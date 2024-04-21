@@ -2,62 +2,53 @@
   box-sizing: border-box;
 }
 
-
-
-table {
-  padding: 20px;
-  border-collapse: collapse;
+body {
+  font-size: 2em;
 }
 
-tbody,
-th {
-  text-align: left;
+.container {
+  border: 5px solid green;
+  position: relative;
 }
 
-
-th,
-td {
-  padding: 10px;
-}
-
-td {
-  text-align: center;
-}
-
-thead th:nth-child(1) {
-  background-color: #7787a9;
-  color: white;
-}
-
-thead th:nth-child(2) {
-  background-color: #4d628f;
-  color: white;
-}
-
-thead th:nth-child(3) {
-  background-color: #2a4271;
-  color: white;
-}
-
-thead th:nth-child(4) {
-  background-color: #152857;
-  color: white;
+.child {
+  border: 5px solid blue;
+  width: 150px;
+  height: 150px;
+  background-color: aquamarine;
 }
 
 
-tbody tr:nth-child(2n + 1) {
-  background-color: #dbdbdb;
+.child:nth-child(1) {
+  position: static;
 }
 
-tbody tr:nth-child(2n) {
-  background-color: #cebdbd;
-}
-
-tr td:nth-child(2n) {
-  background-color: #f3f3f330;
+.child:nth-child(2) {
+  position: relative;
 }
 
 
-button {
-  padding: 6px 20px;
+.child:nth-child(3) {
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  background-color: blueviolet;
+}
+
+header {
+  position: relative;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://www.wfla.com/wp-content/uploads/sites/71/2023/05/GettyImages-1389862392.jpg?w=2560&h=1440&crop=1");
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(199, 65, 65, 0.5);
 }
